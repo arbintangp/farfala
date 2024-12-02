@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <style>body {
+        font-family: Arial, sans-serif;
+        
+      }
+      
+      form {
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 150px;
+      }
+      h1 {
+        color: white;
+      }
+      label {
+        color: white;
+      }
+      input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 20px;
+      }
+      
+      
+      input[type="button"] {
+        width: 25%;
+        background-color: #b9b9b9;
+        color: rgb(51, 51, 51);
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 20px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+      }</style>
+<head>
+    <meta charset="UTF-8" />
+    <title>Login </title>
+</head>
+<body style="background-image: url('../images/bg.png'); width: 100%;">
+    <form id="loginForm"     >
+        <H1>Log In</H1>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"  required> <br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <input type="button" id="log"  style="background: url(../images/btn.png) ;  background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: center;"  > </input>
+      </form>
+      
+</body>
+<script> 
+document.getElementById("log").addEventListener("click", function(event){
+  event.preventDefault()
+
+  const users = [
+  { username: "123", password: "123" },
+  { username: "user2", password: "password2" },
+  { username: "user3", password: "password3" },
+];
+
+ 
+var username = document.querySelector('#username').value;
+var password = document.querySelector('#password').value;
+ 
+  // Check if the entered credentials match any user in the array
+  const user = users.find((u) => u.username === username && u.password === password);
+  
+  if (user) {
+    loggedIn = true;
+    console.log("Login successful!");
+    window.location = "../index.html";  
+     
+    localStorage.setItem('username', username);
+    localStorage.setItem('password', password);
+     
+  } else if(!username || !password) {
+    alert("Enter Username and password to view content");
+    
+    document.querySelector('#username').focus();
+     
+  } else{
+    alert("Login failed. Please verify your username and password");
+    document.querySelector('#username').value = '';
+    document.querySelector('#password').value = '';
+
+  }
+    
+});
+ 
+    </script>
+</html>

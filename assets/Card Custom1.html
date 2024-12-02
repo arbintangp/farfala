@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Farfalla Printing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    
+  
+      .submit { 
+            background-color: white;
+            color: black;
+        
+        }
+    </style>
+  </head>
+  <body class="st-black">
+    <!-- Navbar -->
+    <div class="st-top ">
+      <div class="st-bar st-white st-card st-round-large"  style="background-image: url(../images/25.png);
+      background-size: 10%;
+      background-repeat: no-repeat;
+      background-position-x: center;
+    ">
+        <div> 
+          <a href="../index.html#" class="st-bar-item st-button st-padding-large  st-hide-small">HOME</a>
+          <a href="../index.html#product" class="st-bar-item st-button st-padding-large st-hide-small">PRODUCT</a>
+          <a href="../index.html#contact" class="st-bar-item st-button st-padding-large st-hide-small st-right">CONTACT</a>
+          <a href="../index.html#aboutus" class="st-bar-item st-button st-padding-large st-hide-small st-right">ABOUT US</a>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Page content -->
+    <div class="st-content" style="max-width:2000px; ">
+      <!--  Banner Images -->
+      <div id="mySlides">
+        <div class=" st-display-container st-center">
+          <img src="../images/Group71.png" style="width:100%">
+          <div class="st-display-middle  st-display-left st-container st-text-white st-padding-32 st-hide-small" style="left: 10%;">
+            <h1 style="    font-size: 50px;">Farfalla Printing</h1>
+            <h1 style="    text-align: left; font-style: italic; font-size: 25px;">Expertise, Commitment, Value</h1>
+          </div>
+        </div>
+      </div>
+      <!-- The {Product} Section -->
+      <form id="myForm" action="Card Custom2.html">
+        <div id="product" class="st-container st-content  st-padding-64" style="max-width:800px;opacity:0;">
+          <h2 class="st-wide">Order</h2>
+          <div class="st-row st-padding-32">
+            <div class="st-third  ">
+              <img id="scream" width="220" height="277" src="../images/Card Custom.png">
+              <p id="product-list" style="margin-top: auto; text-align: left;">Card Custom</p>
+            </div>
+            
+            <div class="st-twothird ">
+              <h3>Size Box</h3>
+              <label style="display: none;">
+                <input type="radio" name="size" id="A2" value="A2">
+                <img src="../images/A2.png" style="width: 7%;" alt="A2"  >
+              </label>
+              <label style="display: none;">
+                <input type="radio" name="size" id="A3" value="A3">
+                <img src="../images/A3.png" style="width: 7%;" alt="A3"  >
+              </label>
+              <label style="display: none;">
+                <input type="radio" name="size" id="A4" value="A4">
+                <img src="../images/A4.png" style="width: 7%;" alt="A4"  >
+              </label>
+              <label style="display: none;">
+                <input type="radio" name="size" id="A5" value="A5">
+                <img src="../images/A5.png" style="width: 7%;" alt="A5" >
+              </label>
+              <label >
+                <input type="radio" name="sizec" id="A2c" value="A2">
+                <img src="../images/A2.png" style="width: 7%;" alt="A2"  >
+              </label>
+              <label>
+                <input type="radio" name="sizec" id="A3c" value="A3">
+                <img src="../images/A3.png" style="width: 7%;" alt="A3"  >
+              </label>
+              <label>
+                <input type="radio" name="sizec" id="A4c" value="A4">
+                <img src="../images/A4.png" style="width: 7%;" alt="A4"  >
+              </label>
+              <label>
+                <input type="radio" name="sizec" id="A5c" value="A5">
+                <img src="../images/A5.png" style="width: 7%;" alt="A5" >
+              </label>
+              <h3>Quantity</h3>
+              <input style="display: none;" type="number" id="quantity" name="quantity" min="1" max="5">
+              <input type="number" id="quantityc" name="quantityc" min="1" max="5">
+            </div>
+            
+          </div>
+          <hr>
+          <div class=".st-col.m12 ">
+            <h3 style="margin-bottom: 20px;">Payment Method</h3>
+            <label>
+              <input type="radio" name="payment" value="mandiri" checked>
+              <img src="../images/mandiri.png" alt="Mandiri">
+            </label>
+            <label>
+              <input type="radio" name="payment" value="bni">
+              <img src="../images/bni.png" alt="Bni">
+            </label>
+            <label>
+              <input type="radio" name="payment" value="bca">
+              <img src="../images/bca.png" alt="Bca">
+            </label>
+            <label>
+              <input type="radio" name="payment" value="bri">
+              <img src="../images/bri.png" alt="Bri">
+            </label>
+            <label>
+              <input type="radio" name="payment" value="gopay">
+              <img src="../images/gopay.png" alt="Gopay">
+            </label>
+            <label>
+              <input type="radio" name="payment" value="ovo">
+              <img src="../images/ovo.png" alt="Ovo">
+            </label>
+            <label>
+              <input type="radio" name="payment" value="cod">
+              <img src="../images/cod.png" alt="Cod">
+            </label>
+          </div>
+          <hr>
+          <div class=".st-col.m12">
+            <h3 style="margin-bottom: 20px;">Shipping</h3>
+            <label>
+              <input type="radio" name="shipping" value="jnt" checked>
+              <img src="../images/jnt.png" alt="jnt">
+            </label>
+            <label>
+              <input type="radio" name="shipping" value="jne">
+              <img src="../images/jne.png" alt="jne">
+            </label>
+            <label>
+              <input type="radio" name="shipping" value="tiki">
+              <img src="../images/tiki.png" alt="tiki">
+            </label>
+            <label>
+              <input type="radio" name="shipping" value="sameday">
+              <img src="../images/sameday.png" alt="sameday">
+            </label>
+            <label>
+              <input type="radio" name="shipping" value="nextday">
+              <img src="../images/nextday.png" alt="nextday">
+            </label>
+          </div>
+          <br>
+          <button class="st-button submit" onclick="history.back()">Back </button>
+          <button class="st-button  submit" type="submit" style="float: right;">Order Now</button>
+        </div>
+      </form>
+      <!-- The Contact Section -->
+      <div class="st-white" style="max-width: 2000px;">
+        <div class="st-container st-content st-padding-64 st-white"  id="contact">
+          <h2 class="st-wide st-center">Let's Work Together</h2> 
+          <div class="st-row st-padding-32"  style="margin-left: 10%;">
+            <div class="st-col m0"  >
+              <svg style="margin-top: 15px;
+                float: inline-start; margin-top: 15px;
+                float: inline-start;" width="20" height="25" viewBox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M36 19.8182C36 34.4545 18.5 47 18.5 47C18.5 47 1 34.4545 1 19.8182C1 14.8273 2.84374 10.0408 6.12563 6.51172C9.40752 2.98262 13.8587 1 18.5 1C23.1413 1 27.5925 2.98262 30.8744 6.51172C34.1563 10.0408 36 14.8273 36 19.8182Z" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M18.5003 26.0909C21.722 26.0909 24.3337 23.2825 24.3337 19.8181C24.3337 16.3538 21.722 13.5454 18.5003 13.5454C15.2787 13.5454 12.667 16.3538 12.667 19.8181C12.667 23.2825 15.2787 26.0909 18.5003 26.0909Z" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+            </div>
+            <div class="st-col m6 st-large st-margin-bottom  " style="width: 45%;">
+              
+              <p style="margin-bottom: 0px;">Location</p> 
+              <p style="margin-bottom: 0px;margin-top: 0px;">123 Anywhere St. </p>  
+                <p style="margin-bottom: 0px;margin-top: 0px;">Any City, ST 12345</p> 
+            </div>
+            <div class="st-col m0"  >
+              <svg style="margin-top: 15px;
+              float: inline-start; margin-top: 15px;
+              float: inline-start;" width="20" height="25" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.4998 37.5834C29.9347 37.5834 37.5832 29.9349 37.5832 20.5C37.5832 11.0652 29.9347 3.41669 20.4998 3.41669C11.065 3.41669 3.4165 11.0652 3.4165 20.5C3.4165 29.9349 11.065 37.5834 20.4998 37.5834Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20.5 10.25V20.5L27.3333 23.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+            </div>
+            <div class="st-col m6 st-large st-margin-bottom  " style="width: 45%;">
+                
+              <p style="margin-bottom: 0px;">Contact Us </p> 
+              <p style="margin-bottom: 0px;margin-top: 0px;"> </p>  
+              <p style="margin-bottom: 0px;margin-top: 0px;"> </p>
+                
+            </div>
+            <div class="st-col m0"  >
+              <svg style="margin-top: 15px;
+                float: inline-start; margin-top: 15px;
+                float: inline-start;" width="20" height="25" viewBox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M36 19.8182C36 34.4545 18.5 47 18.5 47C18.5 47 1 34.4545 1 19.8182C1 14.8273 2.84374 10.0408 6.12563 6.51172C9.40752 2.98262 13.8587 1 18.5 1C23.1413 1 27.5925 2.98262 30.8744 6.51172C34.1563 10.0408 36 14.8273 36 19.8182Z" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M18.5003 26.0909C21.722 26.0909 24.3337 23.2825 24.3337 19.8181C24.3337 16.3538 21.722 13.5454 18.5003 13.5454C15.2787 13.5454 12.667 16.3538 12.667 19.8181C12.667 23.2825 15.2787 26.0909 18.5003 26.0909Z" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+            </div>
+            <div class="st-col m6 st-large st-margin-bottom  " style="width: 45%;">
+              
+                
+              <p style="margin-bottom: 0px;">Phone Number</p> 
+              <p style="margin-bottom: 0px;margin-top: 0px;">238 - 1182 - 66</p>   
+            </div>
+            <div class="st-col m0"  >
+            
+              <svg style="margin-top: 15px;
+              float: inline-start; margin-top: 15px;
+              float: inline-start;" width="20" height="25" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.4998 37.5834C29.9347 37.5834 37.5832 29.9349 37.5832 20.5C37.5832 11.0652 29.9347 3.41669 20.4998 3.41669C11.065 3.41669 3.4165 11.0652 3.4165 20.5C3.4165 29.9349 11.065 37.5834 20.4998 37.5834Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20.5 10.25V20.5L27.3333 23.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="st-col m6 st-large st-margin-bottom  " style="width: 45%;">
+                
+              <p style="margin-bottom: 0px;">Work Hour</p> 
+                <p style="margin-bottom: 0px;margin-top: 0px;">7 AM - 5 PM</p>  
+                <p style="margin-bottom: 0px;margin-top: 0px;">Monday - Saturday</p> 
+                <br>
+            </div>
+            <div class="st-col m0"  >
+              <svg style="margin-top: 15px;
+                float: inline-start; margin-top: 15px;
+                float: inline-start;" width="20" height="25" viewBox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M36 19.8182C36 34.4545 18.5 47 18.5 47C18.5 47 1 34.4545 1 19.8182C1 14.8273 2.84374 10.0408 6.12563 6.51172C9.40752 2.98262 13.8587 1 18.5 1C23.1413 1 27.5925 2.98262 30.8744 6.51172C34.1563 10.0408 36 14.8273 36 19.8182Z" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M18.5003 26.0909C21.722 26.0909 24.3337 23.2825 24.3337 19.8181C24.3337 16.3538 21.722 13.5454 18.5003 13.5454C15.2787 13.5454 12.667 16.3538 12.667 19.8181C12.667 23.2825 15.2787 26.0909 18.5003 26.0909Z" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+            </div>
+            <div class="st-col m6 st-large st-margin-bottom  " style="width: 45%;">
+              
+              <p style="margin-bottom: 0px;">Email Address</p>  
+              <p style="margin-bottom: 0px;margin-top: 0px;"> Hwt@Farfalla.com</p> 
+            </div>
+
+          
+          </div>
+        </div>
+      </div>
+      <!-- End Page Content -->
+    </div>
+    <script>
+      cekLogin();
+
+      function myFunctionSubmit() {
+        document.getElementById("myForm").submit();
+      }
+      const size = new URLSearchParams(window.location.search).get('size');
+      
+      const quantity = new URLSearchParams(window.location.search).get('quantity');
+      document.getElementById(size).checked = true;
+      document.getElementById(size+'c').checked = true;
+      if(size){
+      document.getElementById('A2c').disabled= true;
+      document.getElementById('A3c').disabled= true;
+      document.getElementById('A4c').disabled= true;
+      document.getElementById('A5c').disabled= true;
+    } 
+      document.getElementById('quantity').value = quantity;
+      document.getElementById('quantityc').value = quantity;
+      document.getElementById('quantityc').disabled = true;
+
+      function cekLogin() {
+        if (localStorage.getItem('username') === null && localStorage.getItem('password') === null) {
+          alert("Please login to view content")
+          window.location = "login.html";
+        }
+      }
+ 
+      var opacity = 0;
+      var intervalID = 0;
+      window.onload = fadeIn;
+
+      function fadeIn() {
+        setInterval(show, 200);
+      }
+
+      function show() {
+        var swb = document.getElementById("product");
+        opacity = Number(window.getComputedStyle(swb).getPropertyValue("opacity"));
+        if (opacity < 1) {
+          opacity = opacity + 0.1;
+          swb.style.opacity = opacity
+        } else {
+          clearInterval(intervalID);
+        }
+      }
+    </script>
+  </body>
+</html>
